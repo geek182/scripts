@@ -1,0 +1,11 @@
+client list
+
+addr: The client address, that is, the client IP and the remote port number it used to connect with the Redis server.
+fd: The client socket file descriptor number.
+name: The client name as set by CLIENT SETNAME.
+age: The number of seconds the connection existed for.
+idle: The number of seconds the connection is idle.
+flags: The kind of client (N means normal client, check the full list of flags).
+omem: The amount of memory used by the client for the output buffer.
+cmd: The last executed command.
+---
