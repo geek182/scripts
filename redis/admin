@@ -1,3 +1,5 @@
+#http://redis.io/topics/admin
+---
 client list
 
 addr: The client address, that is, the client IP and the remote port number it used to connect with the Redis server.
