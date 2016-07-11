@@ -1,0 +1,13 @@
+#ADD ROUTE
+route add default gw
+route add default gw 192.168.1.1
+
+route add -host gw
+route add -host 192.168.1.100 gw 192.168.1.2
+
+
+#DEL ROUTE
+route del default gw
+route del default gw 192.168.1.1
+route del -host gw
+route del -host 192.168.1.100 gw 192.168.1.2

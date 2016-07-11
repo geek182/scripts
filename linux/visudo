@@ -1,0 +1,2 @@
+%GRUPO ALL=(ALL)       NOPASSWD: /bin/vi /etc/hosts, /etc/init.d/tomcat stop, /etc/init.d/tomcat start, /bin/vi /usr/local/tomcat/conf, /bin/su tomcat
+
