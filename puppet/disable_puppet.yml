@@ -1,0 +1,6 @@
+---
+- hosts: SERVIDORES 
+  gather_facts: no
+  become: yes
+  tasks:
+  - service: name=puppet state=stopped enabled=no
