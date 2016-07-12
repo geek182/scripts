@@ -11,3 +11,15 @@ route del default gw
 route del default gw 192.168.1.1
 route del -host gw
 route del -host 192.168.1.100 gw 192.168.1.2
+
+
+#Adding a single IP
+
+ip route add 10.1.5.202/32 via 10.1.7.1 dev eth1
+
+#Add whole subnet
+ ip route add 10.1.5.0/24 via 10.1.7.1 dev eth1
+
+
+
+
