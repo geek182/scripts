@@ -1,1 +1,8 @@
+#TEST USERPARAMETERS FROM CLIENT
 
+zabbix_agentd -t mysql.questions
+
+
+#TEST USERPARAMETERS FROM SERVER
+
+zabbix_get -s 10.10.10.10 -k mysql.questions
