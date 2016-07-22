@@ -1,0 +1,7 @@
+ansible-playbook file.yml
+
+#SPECIFIC HOST 
+ansible-playbook -l SERVER file.yml
+
+#COPY A FILE WITH PERM
+ansible GRUOPHOST -m copy -a "src=count.sh dest=/etc/zabbix/ mode=0755" -o
