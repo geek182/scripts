@@ -1,0 +1,12 @@
+---
+- hosts: desktop
+  tasks:
+     - name: REGEX add o valor do group name no final / APPEND
+       replace:
+          backup: yes
+          dest: /tmp/groups
+          regexp: '^(AllowGroups(?!.*\b{{ groupname }}\b).*)$'
+          replace: '\1 {{ groupname }}'
+       vars:
+       groupname: 'LEANDRO'
+
