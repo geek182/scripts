@@ -6,3 +6,15 @@ zabbix_agentd -t mysql.questions
 #TEST USERPARAMETERS FROM SERVER
 
 zabbix_get -s 10.10.10.10 -k mysql.questions
+
+
+#Check version agent
+zabbix_get -s <Server IP> -k agent.version
+
+#ZABBIX SENDER
+zabbix_sender -z <server IP address> -p 10051 -s "New host" -k trap -o "test value"
+
+#link
+#http://repo.zabbix.com/zabbix/3.0/rhel/7/x86_64/
+#Soma valores do grupo
+grpsum[["Servers A","Servers B","Servers C"],system.cpu.load,last]
