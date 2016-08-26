@@ -1,0 +1,13 @@
+#DELETE ONLY FILES
+find /var/myfolder -type f -delete
+
+
+#Change ID of foo user
+usermod -u 2005 foo
+
+#Change ID from group foo
+groupmod -g 3000 foo
+
+#FIND ID and change own from group or user
+ find / -group 2000 -exec chgrp -h foo {} \;
+ find / -user 1005 -exec chown -h foo {} \;
