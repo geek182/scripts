@@ -1,0 +1,3 @@
+#execute a shell  command/ -i for a host file / -m modulename / -a command /
+ansible GROUPHOST  -i hosts -m shell -a "uptime"
+
