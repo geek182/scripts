@@ -1,0 +1,9 @@
+---
+  - hosts: desktop
+
+    tasks:
+    - name: Atualiza Sistema Operacional
+      yum: 
+        name: /home/lazevedo/Downloads/jre-8u72-linux-x64.rpm
+        state: present
+
